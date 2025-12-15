@@ -2,6 +2,8 @@ package com.ocean.engine.model;
 
 import lombok.Data;
 
+import java.util.Arrays;
+
 @Data
 public class IActElement {
 
@@ -22,4 +24,22 @@ public class IActElement {
     private Integer age;
 
     private Long installTime;
+
+    private String config;
+
+    @Override
+    public String toString() {
+        return "IActElement{" +
+                "id=" + id +
+                ", code='" + code + '\'' +
+                ", nameSpace='" + nameSpace + '\'' +
+                ", appIds=" + Arrays.toString(appIds) +
+                ", os='" + os + '\'' +
+                ", channels=" + Arrays.toString(channels) +
+                ", provinces=" + Arrays.toString(provinces) +
+                ", age=" + age +
+                ", installTime=" + installTime +
+                ", config='" + config + '\'' +
+                '}';
+    }
 }

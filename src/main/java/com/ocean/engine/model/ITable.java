@@ -13,16 +13,16 @@ public class ITable {
     /**
      * 生成决策表
      */
-    private ITable makeTable(List<Exe> exes) {
+   /* private ITable makeTable(List<Exe> exes) {
         if (exes == null || exes.size() == 0) {
             logger.warn("无在投计划，决策表置为空");
             return null;
         } else {
-            ITable table = new ITable(exes, irPoolCapacity,retargetingCache);
+            ITable table = new ITable(exes, irPoolCapacity);
             logger.info("决策表创建完成");
             logger.info("\n{}", table.toString());
             loggerDistinct(table);
             return table;
         }
-    }
+    }*/
 }
